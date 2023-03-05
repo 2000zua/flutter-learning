@@ -87,57 +87,6 @@ class MyHomePage extends StatelessWidget {
   }
 }
 
-/*
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    var appState = context.watch<MyAppState>();
-    var pair = appState.current;
-
-    // configuracao do icon favorito
-    IconData icon;
-    if (appState.favorites.contains(pair)) {
-      icon = Icons.favorite;
-    } else {
-      icon = Icons.favorite_border;
-    }
-
-    return Scaffold(
-      body: Center(
-        child: Column(
-          // alinhar no centro dentro de um eixo vertical
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            BigCard(pair: pair),
-            SizedBox(height: 10),
-            // ADD UM BUTTON
-            Row(
-              // para centrar a row na tela, Isso diz para não ocupar todo o espaço horizontal
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                // button icon
-                ElevatedButton.icon(
-                    onPressed: () {
-                      appState.toggleFavorite();
-                    },
-                    icon: Icon(icon),
-                    label: Text('Like')),
-                SizedBox(
-                  width: 10,
-                ),
-                ElevatedButton(
-                    onPressed: () {
-                      appState.getNext();
-                    },
-                    child: Text('Next')),
-              ],
-            )
-          ],
-        ),
-      ),
-    );
-  }
-}*/
 
 // class para add um cartao
 class BigCard extends StatelessWidget {
